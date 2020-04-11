@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Login or Signup</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="icon" type="image/ico" sizes="16x16" href="/favicon.ico" />
+    <link rel="stylesheet" href="custom.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    <link rel="stylesheet" href="css/registration.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="d-flex justify-content-center h-100">
+        <div class="card">
+          <div class="card-header">
+            <h3>Sign-up or Sign-In </h3>
+            <!-- <div class="d-flex justify-content-end social_icon">
+              <span><i class="fab fa-facebook-square"></i></span>
+              <span><i class="fab fa-google-plus-square"></i></span>
+              <span><i class="fab fa-twitter-square"></i></span>
+            </div> -->
+          </div>
+          <div class="card-body">
+            <div id="errorpanel" class="text-danger">
+                <p id="errormessage"></p>
+            </div>
+            <form>
+              <div class="input-group form-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"
+                    ><i class="fas fa-user"></i
+                  ></span>
+                </div>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="email"
+                  id="email"
+                  placeholder="username"
+                />
+              </div>
+              <div class="input-group form-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"
+                    ><i class="fas fa-key"></i
+                  ></span>
+                </div>
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  class="form-control"
+                  placeholder="password"
+                />
+              </div>
+              
+              <div class="form-group">
+                <input
+                  type="button"
+                  value="Login"
+                  class="btn float-right login_btn"
+                  onclick="signIn()"
+                />
+                <input
+                      type="button"
+                      value="Signup"
+                      class="btn float-left login_btn"
+                      onclick="signUp()"
+                    />
+              </div>
+              
+            </form>
+          </div>
+          <div class="card-footer">
+            <!-- <div class="d-flex justify-content-center links">
+              Don't have an account?<a href="#">Sign Up</a>
+            </div> -->
+            <div class="d-flex justify-content-center">
+              <a href="#">Forgot your password?</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
+
+    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-analytics.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-firestore.js"></script>
+    <script src="js/registration.js"></script>
+  </body>
+</html>
