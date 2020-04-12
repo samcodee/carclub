@@ -36,9 +36,14 @@
 
 </head>
 
-<body class="bg-light">
+<body class="bg-light" onload="checkUser()">
     <div class="container-fluid bg-light text-black">
         <h1 style="text-align: center;" class="display-4">CARCLUB</h1>
+    </div>
+    <div class="row">
+        <div class="col">
+            <button id="signOut" onclick="signOut()" class="btn btn-primary" style="float: right;">Logout</button>
+        </div>
     </div>
     <div class="container-fluid bg-light text-black">
         CLICK ON THE CAR MODEL TO GET INFO ON THAT CAR MODEL
@@ -75,6 +80,18 @@
             </p>
         </div>
     </div>
+    <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
+
+    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-analytics.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-firestore.js"></script>
+    <script src="js/registration.js"></script>
 </body>
 
 </html>
