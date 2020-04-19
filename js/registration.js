@@ -72,13 +72,14 @@ function signUp() {
       });
 }
 
-function signOut() {
+function signOut(pathsuffix = '') {
     firebase.auth().signOut();
     console.log("Signedout");
+    window.location.href = pathsuffix + 'signup-login.html';
     
 }
 
-function checkUser() {
+function checkUser(pathsuffix ='') {
     firebase.auth().onAuthStateChanged(user => {
         if(user) {
             console.log(JSON.stringify(user));
@@ -86,7 +87,7 @@ function checkUser() {
           //window.location = '1homepage.html'; //After successful login, user will be redirected to home.html
         }
        else {
-         window.location = 'signup-login.html';
+         window.location.href = pathsuffix + 'signup-login.html';
         }
     });
 }
