@@ -72,14 +72,14 @@ function signUp() {
       });
 }
 
-function signOut(pathsuffix = '') {
+function signOut() {
     firebase.auth().signOut();
     console.log("Signedout");
-    window.location.href = pathsuffix + 'signup-login.html';
+    window.location.href ='signup-login.html';
     
 }
 
-function checkUser(pathsuffix ='') {
+function checkUser() {
     firebase.auth().onAuthStateChanged(user => {
         if(user) {
             console.log(JSON.stringify(user));
@@ -87,7 +87,7 @@ function checkUser(pathsuffix ='') {
           //window.location = '1homepage.html'; //After successful login, user will be redirected to home.html
         }
        else {
-         window.location.href = pathsuffix + 'signup-login.html';
+         window.location.href ='signup-login.html';
         }
     });
 }
