@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Ace DASL (programming language) | INFOPEDIA</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script> -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="icon" type="image/ico" sizes="16x16" href="/favicon.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .description {
+            font-size: 22px;
+        }
+    </style>
+
+</head>
+
+<body class="bg-light" onload="checkUser('../')">
+    <div class="container-fluid bg-light text-black">
+        <h1 style="text-align: center;" class="display-4">INFOPEDIA</h1>
+    </div>
+    <div class="row">
+        <div class="col">
+            <button id="signOut" onclick="signOut()" class="btn btn-primary" style="float: right;">Logout</button>
+            <button onclick="window.location.href = '/1homepage.html'" class="btn btn-primary"
+                style="float: left;">Back</button>
+        </div>
+    </div>
+    <div class="container-fluid bg-light text-black">
+        CLICK ON THE PROGRAMMING LANGUAGE TO GET MORE INFO ON THAT PROGRAMMING LANGUAGE.
+    </div>
+    <div class="row">
+        <div class="col-12 col-sm-3 col-md-4 col-lg-4 col-xl-3 bg-light">
+            <div class="list-group">
+                <a href="ahashnet.html" class="list-group-item list-group-item-action">A# .NET</a>
+                <a href="A-0 system.html" class="list-group-item list-group-item-action">A-0 System</a>
+                <a href="aplus.html" class="list-group-item list-group-item-action">A+</a>
+                <a href="aplusplus.html" class="list-group-item list-group-item-action">A++</a>
+                <a href="abap.html" class="list-group-item list-group-item-action ">ABAP</a>
+                <a href="abc.html" class="list-group-item list-group-item-action">ABC</a>
+                <a href="abcalgol.html" class="list-group-item list-group-item-action">ABC ALGOL</a>
+                <a href="acc.html" class="list-group-item list-group-item-action">ACC</a>
+                <a href="acedasl.html" class="list-group-item list-group-item-action active ">Ace DASL</a>
+                <a href="action!.html" class="list-group-item list-group-item-action ">Action!</a>
+                <a href="actionscript.html" class="list-group-item list-group-item-action ">ActionScript</a>
+                <!-- Uncommment each time to add a link. once uncommented every link, erase this comment. total links pasted a fter this comment is  -->
+                <a href="actor.html" class="list-group-item list-group-item-action ">Actor</a>
+                <a href="ada.html" class="list-group-item list-group-item-action ">Ada</a>
+            </div>
+        </div>
+        <div class="col-12 col-sm-9 col-md-8 col-ld-8 col-xl-9">
+            <h1 class="display-5" style="margin-left: 20px;">
+                ACE DASL
+            </h1>
+            <p class="description" style="margin-left: 20px;">
+                The <strong>DASL Programming Language</strong> (Distributed Application Specification Language) is a high-level, strongly
+                typed programming language originally developed at Sun Microsystems Laboratories between 1999 and 2003
+                as part of the Ace Project. The goals of the project were to enable rapid development of web-based
+                applications based on Sun's J2EE architecture, and to eliminate the steep learning curve of
+                platform-specific details.
+                <br><br>
+                DASL defines an application as a domain model with one or more logical presentation models, where a
+                logical presentation model consists of a choreography of the domain model objects described in a set of
+                forms with attached actions. DASL generates the graphical user interface directly from the logical
+                presentation.
+                <br><br>
+                DASL is unique among modern application programming languages in its ability to generate a modern
+                graphic user interface for an application without requiring the programmer to define the user interface
+                explicitly, while allowing the programmer to control the look and feel of the generated graphic user
+                interface.
+                <br><br>
+                The DASL language is partially declarative and partially procedural. Description of object/data
+                structures and persistence, and the description of the logical presentation, are declarative. Basic
+                object constraints and behavior are declarative, while additional object behaviors are specified
+                procedurally as methods. Queries can be defined either declaratively or by writing methods.
+                <br><br>
+                The language and development environment are a practical realization of the model-driven architecture
+                (MDA) approach. The programmer uses DASL to produce the platform-independent model or PIM, and the
+                language code generators automatically produce and deploy the platform-specific model or PSM. New PSMs
+                may be introduced by writing new code generators.
+
+
+            </p>
+        </div>
+    </div>
+    </div>
+    <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
+
+    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-analytics.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-firestore.js"></script>
+    <script src="../js/registration.js"></script>
+</body>
+
+</html>

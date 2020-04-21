@@ -18,15 +18,15 @@ function signIn() {
     let email = document.getElementById('email').value;
     let password = document.getElementById('password').value;
 
-    console.log(email);
-    console.log(password);
+    // console.log(email);
+    // console.log(password);
     
 
     firebase.auth().signInWithEmailAndPassword(email, password)
     .then(() => {
         firebase.auth().onAuthStateChanged(user => {
             if(user) {
-                console.log(JSON.stringify(user));
+                // console.log(JSON.stringify(user));
                 
               window.location = '1homepage.html'; //After successful login, user will be redirected to home.html
             }
@@ -37,8 +37,8 @@ function signIn() {
         var errorCode = error.code;
         var errorMessage = error.message;
         // ...
-        console.log(errorCode);
-        console.log(errorMessage);
+        // console.log(errorCode);
+        // console.log(errorMessage);
         document.getElementById('errorpanel').innerHTML = errorMessage;
         return;
         
@@ -52,16 +52,16 @@ function signUp() {
     let email = document.getElementById('email').value;
     let password = document.getElementById('password').value;
     
-    console.log(email);
-    console.log(password);
+    // console.log(email);
+    // console.log(password);
     
     firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
         // Handle Errors here.
         var errorCode = error.code;
         var errorMessage = error.message;
         // ...
-        console.log(errorCode);
-        console.log(errorMessage);
+        // console.log(errorCode);
+        // console.log(errorMessage);
         return;
       }); 
 
@@ -72,22 +72,22 @@ function signUp() {
       });
 }
 
-function signOut() {
+function signOut(pathsuffix = '') {
     firebase.auth().signOut();
-    console.log("Signedout");
-    window.location.href ='signup-login.html';
+    // console.log("Signedout");
+    window.location.href = pathsuffix + 'signup-login.html';
     
 }
 
-function checkUser() {
+function checkUser(pathsuffix ='') {
     firebase.auth().onAuthStateChanged(user => {
         if(user) {
-            console.log(JSON.stringify(user));
+            // console.log(JSON.stringify(user));
             
           //window.location = '1homepage.html'; //After successful login, user will be redirected to home.html
         }
        else {
-         window.location.href ='signup-login.html';
+         window.location.href = pathsuffix + 'signup-login.html';
         }
     });
 }
