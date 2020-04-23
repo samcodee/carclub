@@ -12,6 +12,7 @@ async function parseWikiPage(pageTitle) {
         const json = await req.json();
         console.log(json.parse.text["*"]);
         parsedText = json.parse.text["*"];
+        //document.getElementById("wikiContents").innerHTML = parsedText;     
         return parsedText;
     } catch (e) {
         console.error(e);
@@ -19,7 +20,10 @@ async function parseWikiPage(pageTitle) {
 }
                                      
 function loadWiki(pageName) {
+    console.log("Entered....");   
     var contents = parseWikiPage(pageName);
-    document.getElementById("wikiContents").innerHTML = contents;                              
+    console.log("Called....");  
+    document.getElementById("wikiContents").innerHTML = parsedText; 
+    console.log("Finished......");  
                                      
 }
