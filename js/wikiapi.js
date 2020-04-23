@@ -17,3 +17,9 @@ function parseWikiPage(pageTitle) {
         console.error(e);
     }   
 }
+                                     
+function loadWiki(pageName) {
+    var contents = parseWikiPage(pageName);
+    document.getElementById("wikiContents").innerText = contents;                              
+                                     
+}
