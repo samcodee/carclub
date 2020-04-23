@@ -15,7 +15,7 @@ async function parseWikiPage(pageTitle) {
         console.log(json.parse.text["*"]);
         parsedText = json.parse.text["*"];
         console.log("finished api call..... Returning contents....");
-        //document.getElementById("wikiContents").innerHTML = parsedText;     
+        document.getElementById("wikiContents").innerHTML = parsedText;     
         return parsedText;
     } catch (e) {
         console.error(e);
@@ -26,7 +26,7 @@ function loadWiki(pageName) {
     console.log("Entered....");   
     var contents = parseWikiPage(pageName);
     console.log("Called....");  
-    document.getElementById("wikiContents").innerHTML = parsedText; 
+    //document.getElementById("wikiContents").innerHTML = parsedText; 
     console.log("Finished......");  
                                      
 }
