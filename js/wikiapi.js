@@ -10,7 +10,7 @@ async function parseWikiPage(pageTitle) {
     try {
         const req = await fetch(url);
         const json = await req.json();
-        console.log(json.parse.text["*"]));
+        console.log(json.parse.text["*"]);
         parsedText = json.parse.text[*];
         return parsedText;
     } catch (e) {
