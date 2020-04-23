@@ -1,4 +1,4 @@
-function parseWikiPage(pageTitle) {
+async function parseWikiPage(pageTitle) {
      const url = "https://en.wikipedia.org/w/api.php?" +
         new URLSearchParams({
             origin: "*",
