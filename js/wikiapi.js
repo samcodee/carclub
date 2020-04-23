@@ -20,6 +20,6 @@ async function parseWikiPage(pageTitle) {
                                      
 function loadWiki(pageName) {
     var contents = parseWikiPage(pageName);
-    document.getElementById("wikiContents").innerText = contents;                              
+    document.getElementById("wikiContents").innerHTML = contents;                              
                                      
 }
