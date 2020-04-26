@@ -90,4 +90,6 @@ function checkUser(pathsuffix ='') {
          window.location.href = pathsuffix + 'signup-login.html';
         }
     });
+
+    backPage = () => window.history.back();
 }
