@@ -92,4 +92,12 @@ function checkUser(pathsuffix ='') {
     });
 
     backPage = () => window.history.back();
+
+    getBaseUrl = () => {
+      var getUrl = window.location;
+      var baseUrl = getUrl .protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[1];
+      console.log("baseUrl...." + baseUrl);
+      
+      return baseUrl;
+    }
 }
