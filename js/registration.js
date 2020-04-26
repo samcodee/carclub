@@ -75,7 +75,7 @@ function signUp() {
 function signOut(pathsuffix = '') {
     firebase.auth().signOut();
     // console.log("Signedout");
-    window.location.href = 'https://samcodee.github.io/infopedia/signup-login.html';
+    window.location.href = pathsuffix + 'signup-login.html';
     
 }
 
@@ -87,7 +87,7 @@ function checkUser(pathsuffix ='') {
           //window.location = '1homepage.html'; //After successful login, user will be redirected to home.html
         }
        else {
-         window.location.href = 'https://samcodee.github.io/infopedia/signup-login.html';
+         window.location.href = pathsuffix + 'signup-login.html';
         }
     });
 }
