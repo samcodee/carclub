@@ -4,7 +4,7 @@
 <head>
   <meta charset='utf-8'>
   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-  <title>A++ | INFOPEDIA</title>
+  <title>A# .NET | INFOPEDIA</title>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
   <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'> -->
   <!-- <script src='main.js'></script> -->
@@ -23,10 +23,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;1,300&display=swap"
     rel="stylesheet">
   <style>
-    .description {
+    .description{
       font-size: 22px;
     }
-
     body {
       font-family: 'Roboto Condensed', sans-serif;
       transition: background-color .5s;
@@ -93,8 +92,8 @@
     <a href="ahashnet.html">A# .NET</a>
     <a href="A-0 system.html">A-0 System</a>
     <a href="aplus.html">A+</a>
-    <a href="aplusplus.html" class="active">A++</a>
-    <a href="abap.html">ABAP</a>
+    <a href="aplusplus.html">A++</a>
+    <a href="abap.html" class="active">ABAP</a>
     <a href="abc.html">ABC</a>
     <a href="abcalgol.html">ABC ALGOL</a>
     <a href="acc.html">ACC</a>
@@ -141,10 +140,9 @@
         </div>
       </div>
     </div>
-    <!-- samcodee.github.io/infopedia/---/-- -->
     <div class="row">
       <div class="col">
-        <button id="signOut" onclick="signOut('/')" class="btn btn-primary" style="float: right;">Logout</button>
+        <button id="signOut" onclick="signOut('../')" class="btn btn-primary" style="float: right;">Logout</button>
         <button onclick="backPage()" class="btn btn-primary"
           style="float: left;">Back</button>
       </div>
@@ -153,21 +151,17 @@
       CLICK ON THE PROGRAMMING LANGUAGE IN THE MENU TO GET MORE INFO ON THAT PROGRAMMING LANGUAGE.
     </div>
     <h1 class="display-5" style="margin-left: 20px;">
-      A++
+      A# .NET
     </h1>
     <p class="description" style="margin-left: 20px;">
-      <strong>A++</strong> stands for <strong>abstraction plus reference plus synthesis</strong> which is used as a name for the minimalistic programming
-      language that is built on ARS. <strong>ARS</strong>> is an abstraction from the Lambda Calculus, taking its three basic operations,
-      and giving them a more general meaning, thus providing a foundation for the three major programming paradigms:
-      functional programming, object-oriented programming and imperative programming.
-<br><br>
-      <strong>ARS Based Programming</strong> is used as a name for programming which consists mainly of applying patterns derived from
-      ARS to programming in any language.
-<br><br>
-      The 2nd edition of the book <strong>A++ The Smallest Programming Language in the World</strong>> (292 pages) was published in
-      2018.
+      <strong> A# </strong> is a port of the Ada programming language to the Microsoft .NET platform. A# is freely
+      distributed by the Department of Computer Science at the United States Air Force Academy as a service to the Ada
+      community under the terms of the GNU General Public License.
+
+      AdaCore has taken over this development, and announced "GNAT for .NET", which is a fully supported .NET product
+      with all of the features of A# and more.
     </p>
-    <!-- <table class="table table-hover">
+    <table class="table table-hover">
       <tbody>
         <tr>
           <td>Designed by</td>
@@ -195,8 +189,7 @@
         </tr>
       </tbody>
     </table>
-    <p>Visit A# .NET official website <a href="https://www.asharp.martincarlisle.com">www.asharp.martincarlisle.com</a>
-    </p> -->
+      <p>Visit A# .NET official website <a href="https://www.asharp.martincarlisle.com">www.asharp.martincarlisle.com</a></p>
   </div>
 
   <script>
@@ -211,6 +204,11 @@
       document.getElementById("main").style.marginLeft = "0";
       document.body.style.backgroundColor = "white";
     }
+
+    function newBackPage() {
+     window.history.back();
+    }
+    
   </script>
   <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
 
