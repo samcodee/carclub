@@ -4,7 +4,7 @@
 <head>
   <meta charset='utf-8'>
   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-  <title>ABAP | INFOPEDIA</title>
+  <title>A+ | INFOPEDIA</title>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
   <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'> -->
   <!-- <script src='main.js'></script> -->
@@ -86,7 +86,7 @@
     }
      /* width */
      ::-webkit-scrollbar {
-      width: 7px;
+      width: 10px;
     }
 
     /* Track */
@@ -111,9 +111,9 @@
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="ahashnet.html">A# .NET</a>
     <a href="A-0 system.html">A-0 System</a>
-    <a href="aplus.html">A+</a>
+    <a href="aplus.html" class="active">A+</a>
     <a href="aplusplus.html">A++</a>
-    <a href="abap.html" class="active">ABAP</a>
+    <a href="abap.html">ABAP</a>
     <a href="abc.html">ABC</a>
     <a href="abcalgol.html">ABC ALGOL</a>
     <a href="acc.html">ACC</a>
@@ -162,52 +162,85 @@
     </div>
     <div class="row">
       <div class="col">
-        <button id="signOut" onclick="signOut('../')" class="btn btn-primary" style="float: right;">Logout</button>
-        <button onclick="backPage()" class="btn btn-primary" style="float: left;">Back</button>
+        <button id="signOut" onclick="signOut('/')" class="btn btn-primary" style="float: right;">Logout</button>
+        <button onclick="backPage()" class="btn btn-primary"
+          style="float: left;">Back</button>
       </div>
     </div>
     <div class="container-fluid text-black">
       CLICK ON THE PROGRAMMING LANGUAGE IN THE MENU TO GET MORE INFO ON THAT PROGRAMMING LANGUAGE.
     </div>
     <h1 class="display-5" style="margin-left: 20px;">
-      ABAP
+      A+
     </h1>
     <p class="description" style="margin-left: 20px;">
-      <strong>ABAP</strong> (Advanced Business Application Programming, originally Allgemeiner Berichts-Aufbereitungs-Prozessor, German
-      for "general report creation processor") is a high-level programming language created by the German software
-      company SAP SE. It is extracted from the base computing languages Java, C, C++ and Python. It is currently
-      positioned, alongside Java, as the language for programming the SAP NetWeaver Application Server, which is part of
-      the SAP NetWeaver platform for building business applications.
+      <strong>A+</strong> is an array programming language descended from the programming language A, which in turn was created to
+      replace APL in 1988. Arthur Whitney developed the A portion of A+, while other developers at Morgan Stanley
+      extended it, adding a graphical user interface and other language features. A+ is a high-level, interactive,
+      interpreted language, designed for numerically intensive applications, especially those found in financial
+      applications. A+ runs on many Unix variants, including Linux. It is free and open source software released under a
+      GNU General Public License.
+<br><br>
+      A+ provides an extended set of functions and operators, a graphical user interface with automatic synchronizing of
+      widgets and variables, asynchronous executing of functions associated with variables and events, dynamic loading
+      of user compiled subroutines, and other features. A newer graphical user interface has not yet been ported to all
+      supported platforms
+<br><br>
+      The A+ language implements the following changes to the APL language:
+<br><br>
+      An A+ function may have up to nine formal parameters <br><br>
+      A+ code statements are separated by semicolons, so a single statement may be divided into two or more physical
+      lines <br><br>
+      The explicit result of a function or operator is the result of the last statement executed <br><br>
+      A+ implements an object called a dependency, which is a global variable (the dependent variable) and an associated
+      definition that is like a function with no arguments. Values can be explicitly set and referenced in exactly the
+      same ways as for a global variable, but they can also be set through the associated definition. <br><br>
+      Interactive A+ development is primarily done in the Xemacs editor, through extensions to the editor. Because A+
+      code uses the original APL symbols, displaying A+ requires a font with those special characters; a font named kapl
+      is provided on the web site for that purpose.
+<br><br>
+      Arthur Whitney went on to create a proprietary array language named K. Like J, K omits the APL character set. It
+      lacks some of the perceived complexities of A+, such as the existence of statements and two different modes of
+      syntax.
     </p>
     <table class="table table-hover">
       <tbody>
         <tr>
           <td>Paradigm</td>
-          <td>Object-oriented, structured, imperative</td>
+          <td>Array</td>
         </tr>
         <tr>
           <td>Designed by</td>
-          <td>SAP SE</td>
+          <td>Arthur Whitney</td>
+        </tr>
+        <tr>
+          <td>Developer</td>
+          <td>Morgan Stanley</td>
         </tr>
         <tr>
           <td>First appeared</td>
-          <td>1983; 37 years ago</td>
+          <td>1988; 32 years ago</td>
         </tr>
         <tr>
           <td>Stable release</td>
-          <td>7.54 / September 20, 2019; 7 months ago</td>
+          <td>4.22-1 / March 27, 2008; 12 years ago</td>
         </tr>
         <tr>
           <td>Typing discipline</td>
-          <td>Static, strong, safe, nominative</td>
+          <td>Dynamic, strong</td>
         </tr>
         <tr>
-          <td>OS</td>
-          <td>Cross-platform</td>
+          <td>License</td>
+          <td>GNU General Public License</td>	
+        </tr>
+        <tr>
+          <td>Filename extensions</td>
+          <td>.., .+, .a, .m</td>
         </tr>
       </tbody>
     </table>
-    <p>Visit ABAP official website <a href="https://scn.sap.com/community/abap">scn.sap.com/community/abap</a></p>
+    <p>Visit A+ official website <a href="https://www.aplusdev.org">www.aplusdev.org</a>
+    </p>
   </div>
 
   <script>
@@ -222,11 +255,6 @@
       document.getElementById("main").style.marginLeft = "0";
       document.body.style.backgroundColor = "white";
     }
-
-    function newBackPage() {
-      window.history.back();
-    }
-
   </script>
   <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
 
