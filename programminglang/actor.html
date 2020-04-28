@@ -4,7 +4,7 @@
 <head>
   <meta charset='utf-8'>
   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-  <title>ACC | INFOPEDIA</title>
+  <title>Actor | INFOPEDIA</title>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
   <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'> -->
   <!-- <script src='main.js'></script> -->
@@ -84,8 +84,9 @@
         font-size: 18px;
       }
     }
-     /* width */
-     ::-webkit-scrollbar {
+
+    /* width */
+    ::-webkit-scrollbar {
       width: 7px;
     }
 
@@ -116,11 +117,11 @@
     <a href="abap.html">ABAP</a>
     <a href="abc.html">ABC</a>
     <a href="abcalgol.html">ABC ALGOL</a>
-    <a href="acc.html" class="active">ACC</a>
+    <a href="acc.html">ACC</a>
     <a href="acedasl.html">Ace DASL</a>
     <a href="action.html">Action!</a>
     <a href="actionscript.html">ActionScript</a>
-    <a href="actor.html">Actor</a>
+    <a href="actor.html" class="active">Actor</a>
     <a href="#">Ada</a>
     <a href="#">Adenine</a>
     <a href="#">Agda</a>
@@ -170,17 +171,23 @@
       CLICK ON THE PROGRAMMING LANGUAGE IN THE MENU TO GET MORE INFO ON THAT PROGRAMMING LANGUAGE.
     </div>
     <h1 class="display-5" style="margin-left: 20px;">
-      ACC
+      Actor
     </h1>
     <p class="description" style="margin-left: 20px;">
-      <strong>ACC</strong> is a near-C compiler for the MS-DOS operating system on the IBM PC line of computers for programs. The
-      compiler and compiled programs will run on any Intel 80386 or above PC running MS-DOS. Included with the compiler
-      are a 386 assembler and a linker for combining multiple object files. There are also two libraries, which are a
-      protected mode DOS extender (based on Thomas Pytel's, AKA Tran's PMODE30B + PMODE307 DOS extenders), and a library
-      of functions callable by C programs.
+      The <strong>Actor</strong> programming language was invented by Charles Duff of The Whitewater Group in 1988. It was an offshoot of
+      some object-oriented extensions to the Forth language he had been working on.
 <br><br>
-      Pointers are 4 bytes, and can access all available memory. All memory can be allocated too. The compiler,
-      assembler and linker are all very small and reportedly very fast.
+      Actor is a pure object-oriented language in the style of Smalltalk. Like Smalltalk, everything is an object,
+      including small integers. A Baker semi-space garbage collector is used, along with (in memory-constrained Windows
+      2.1 days) a software virtual memory system that swaps objects. A token threaded interpreter, written in 16-bit
+      x86 assembly language, executes compiled code.
+<br><br>
+      Actor only was released for Microsoft Windows 2.1 and 3.0. Actor used a pure object-oriented framework over native
+      operating system calls as its basic GUI architecture. This allows an Actor application to look and feel exactly
+      like a Windows application written in C, but with all the advantages of an interactive Smalltalk-like development
+      environment. Both a downside and upside to this architecture is a tight coupling to the Windows architecture, with
+      a thin abstraction layer into objects. This allows direct use of the rich Windows OS API, but also makes it nearly
+      impossible to support any other OS without a significant rewrite of the application framework.
     </p>
     <!-- <table class="table table-hover">
       <tbody>
